@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vacantes disponibles | AMAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+<a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+<header class="encabezado">
+<div class="contenedor encabezado__fila">
+<a class="encabezado__logo" href="index.html"><img src="img/logo.png" alt="AMAC, ir al inicio" width="103" height="38"></a>
+<a class="ayuda-amac" href="tel:8100000000">Ayuda: 81 0000 0000</a>
+<nav class="nav" aria-label="Navegación principal"><ul><li><a href="index.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v12H3zM8 8V5h8v3"/></svg>Empleos</a></li><li><a href="mis-solicitudes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>Solicitudes</a></li><li><a href="empresa-vacantes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V3h10v18M14 9h6v12M8 7h2M8 11h2M8 15h2"/></svg>Mi empresa</a></li><li><a href="login.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Ingresar</a></li></ul></nav>
+</div>
+</header>
+<div class="hero"><div class="contenedor"><h1>Empleos para ti</h1><p>Encuentra trabajo fácil y rápido</p></div></div>
+<main id="principal" class="principal contenedor ">
+
+<form action="index.html" method="get" role="search" class="formulario-ancho">
+<div class="campo-formulario"><label for="buscar">Buscar por empleo, empresa o ubicación</label><input type="search" id="buscar" name="q" placeholder="Ej. administrativo, Softtek, Monterrey"></div>
+<details class="panel"><summary><h2>Filtrar resultados</h2></summary><div class="panel__contenido">
+<div class="campo-formulario"><label for="categoria">Categoría</label><select id="categoria" name="categoria"><option>Todas las áreas</option><option>Administración</option><option>Tecnología</option><option>Limpieza</option><option>Logística</option><option>Servicios</option></select></div>
+<div class="campo-formulario"><label for="horario">Horario</label><select id="horario" name="horario"><option>Cualquier horario</option><option>Matutino</option><option>Vespertino</option><option>Medio tiempo</option><option>Tiempo completo</option></select></div>
+<button type="submit" class="boton boton--primario boton--completo">Buscar empleos</button>
+<a href="index.html">Limpiar filtros</a></div></details>
+<button type="submit" class="boton boton--secundario boton--completo">Buscar</button>
+</form>
+<div class="barra-resultados"><h2>24 vacantes</h2><div class="campo-formulario"><label for="orden">Ordenar por</label><select id="orden" name="orden"><option>Más recientes</option><option>Mayor sueldo</option></select></div></div>
+<ul class="lista-vacantes"><li><article class="tarjeta-vacante">
+<div class="tarjeta-vacante__cabecera"><span class="logo-empresa" aria-hidden="true">gc</span><p class="tarjeta-vacante__empresa">Grupo Cónsul <span class="etiqueta etiqueta--nueva">NUEVA</span><span class="tarjeta-vacante__tiempo">Hace 2 horas</span></p><button type="button" class="boton-icono" aria-label="Guardar vacante Auxiliar administrativo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button></div>
+<h3 class="tarjeta-vacante__titulo"><a href="vacante.html">Auxiliar administrativo</a></h3>
+<ul class="tarjeta-vacante__datos"><li>Santa Catarina, N. L.</li><li class="tarjeta-vacante__sueldo">$10,000 – $12,000 <span>/ mes</span></li></ul>
+<ul class="etiquetas"><li class="etiqueta">Presencial</li><li class="etiqueta">Tiempo completo</li></ul>
+<a class="boton boton--primario boton--completo" href="vacante.html">Ver y postularte<span class="solo-lectores"> a Auxiliar administrativo</span></a>
+</article></li><li><article class="tarjeta-vacante">
+<div class="tarjeta-vacante__cabecera"><span class="logo-empresa" aria-hidden="true">S</span><p class="tarjeta-vacante__empresa">Softtek <span class="tarjeta-vacante__tiempo">Hace 5 horas</span></p><button type="button" class="boton-icono" aria-label="Guardar vacante Soporte técnico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button></div>
+<h3 class="tarjeta-vacante__titulo"><a href="vacante.html">Soporte técnico</a></h3>
+<ul class="tarjeta-vacante__datos"><li>Monterrey, N. L.</li><li class="tarjeta-vacante__sueldo">$16,000 – $20,000 <span>/ mes</span></li></ul>
+<ul class="etiquetas"><li class="etiqueta">Híbrido</li><li class="etiqueta">Tiempo completo</li></ul>
+<a class="boton boton--primario boton--completo" href="vacante.html">Ver y postularte<span class="solo-lectores"> a Soporte técnico</span></a>
+</article></li><li><article class="tarjeta-vacante">
+<div class="tarjeta-vacante__cabecera"><span class="logo-empresa" aria-hidden="true">LR</span><p class="tarjeta-vacante__empresa">Limpieza Regia <span class="tarjeta-vacante__tiempo">Hace 1 día</span></p><button type="button" class="boton-icono" aria-label="Guardar vacante Intendente general"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button></div>
+<h3 class="tarjeta-vacante__titulo"><a href="vacante.html">Intendente general</a></h3>
+<ul class="tarjeta-vacante__datos"><li>San Nicolás, N. L.</li><li class="tarjeta-vacante__sueldo">$9,500 – $11,000 <span>/ mes</span></li></ul>
+<ul class="etiquetas"><li class="etiqueta">Presencial</li><li class="etiqueta">Medio tiempo</li></ul>
+<a class="boton boton--primario boton--completo" href="vacante.html">Ver y postularte<span class="solo-lectores"> a Intendente general</span></a>
+</article></li><li><article class="tarjeta-vacante">
+<div class="tarjeta-vacante__cabecera"><span class="logo-empresa" aria-hidden="true">DN</span><p class="tarjeta-vacante__empresa">Distribuidora Norte <span class="tarjeta-vacante__tiempo">Hace 1 día</span></p><button type="button" class="boton-icono" aria-label="Guardar vacante Recepción de almacén"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button></div>
+<h3 class="tarjeta-vacante__titulo"><a href="vacante.html">Recepción de almacén</a></h3>
+<ul class="tarjeta-vacante__datos"><li>Monterrey, N. L.</li><li class="tarjeta-vacante__sueldo">$8,600 – $9,500 <span>/ mes</span></li></ul>
+<ul class="etiquetas"><li class="etiqueta">Presencial</li><li class="etiqueta">Tiempo completo</li></ul>
+<a class="boton boton--primario boton--completo" href="vacante.html">Ver y postularte<span class="solo-lectores"> a Recepción de almacén</span></a>
+</article></li><li><article class="tarjeta-vacante">
+<div class="tarjeta-vacante__cabecera"><span class="logo-empresa" aria-hidden="true">MN</span><p class="tarjeta-vacante__empresa">Maderas del Norte <span class="tarjeta-vacante__tiempo">Hace 2 días</span></p><button type="button" class="boton-icono" aria-label="Guardar vacante Ayudante de carpintería"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button></div>
+<h3 class="tarjeta-vacante__titulo"><a href="vacante.html">Ayudante de carpintería</a></h3>
+<ul class="tarjeta-vacante__datos"><li>Santa Catarina, N. L.</li><li class="tarjeta-vacante__sueldo">$10,000 – $12,000 <span>/ mes</span></li></ul>
+<ul class="etiquetas"><li class="etiqueta">Presencial</li><li class="etiqueta">Tiempo completo</li></ul>
+<a class="boton boton--primario boton--completo" href="vacante.html">Ver y postularte<span class="solo-lectores"> a Ayudante de carpintería</span></a>
+</article></li><li><article class="tarjeta-vacante">
+<div class="tarjeta-vacante__cabecera"><span class="logo-empresa" aria-hidden="true">HP</span><p class="tarjeta-vacante__empresa">Hotel Plaza <span class="tarjeta-vacante__tiempo">Hace 3 días</span></p><button type="button" class="boton-icono" aria-label="Guardar vacante Recepcionista"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button></div>
+<h3 class="tarjeta-vacante__titulo"><a href="vacante.html">Recepcionista</a></h3>
+<ul class="tarjeta-vacante__datos"><li>Centro, Monterrey, N. L.</li><li class="tarjeta-vacante__sueldo">$9,000 – $10,500 <span>/ mes</span></li></ul>
+<ul class="etiquetas"><li class="etiqueta">Presencial</li><li class="etiqueta">Matutino</li></ul>
+<a class="boton boton--primario boton--completo" href="vacante.html">Ver y postularte<span class="solo-lectores"> a Recepcionista</span></a>
+</article></li></ul>
+<p class="aviso-vacio"><a class="boton boton--contorno" href="index.html">Ver más empleos</a></p>
+
+</main>
+<footer class="pie">
+<div class="contenedor">
+<p><strong>AMAC</strong> · Bolsa de trabajo para personas adultas mayores.</p>
+<p>¿Dudas o problemas? Llama a un empleado de AMAC: <a href="tel:8100000000">81 0000 0000</a></p>
+<div class="pie__enlaces"><a href="index.html">Empleos</a><a href="registro-candidato.html">Crear cuenta</a><a href="https://www.amac.org.mx/donativos">Donativos</a></div>
+</div>
+</footer>
+</body>
+</html>
