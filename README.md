@@ -1,35 +1,39 @@
-# AMAC – Plataforma de empleo (Entrega 2: HTML y CSS)
-
-Proyecto OT2026-WEB · Universidad de Monterrey
-
-## Integrantes
-- Diego Núñez Guzmán (637048) – _completar qué hizo_
-- Ricardo Villarreal Villatoro (628352) – _completar qué hizo_
-- Emiliano Martinez Ramirez (683446) – _completar qué hizo_
-
-## Páginas
-`index.html` · `vacante.html` · `login.html` · `registro-candidato.html` · `mis-solicitudes.html` · `empresa-vacantes.html`
-
-Flujo de demo: index → vacante → Postularme (ventana de confirmación) → mis-solicitudes.
-
-## Variables CSS (css/variables.css)
-| Token | Valor | Uso |
-|---|---|---|
-| --color-marino | #202945 | Header, botones secundarios, texto |
-| --color-coral | #ff7c5f | Botón principal (texto marino, contraste 5.67:1) |
-| --color-coral-texto | #b3361b | Enlaces/acentos en texto (contraste 6.07:1) |
-| --color-celeste | #d5e9f2 | Logos de empresa, carrusel |
-| --color-banner | #6953f3 | Anillo de foco |
-Tipografía: Atkinson Hyperlegible (Google Fonts), base 1.125rem (18 px).
-
-## Componentes reutilizables (para React en la Entrega 3)
-`Encabezado`, `NavPrincipal`, `Pie`, `Boton` (primario/secundario/contorno), `BotonIcono`, `TarjetaVacante`, `TarjetaSolicitud`, `LogoEmpresa`, `Etiqueta` (nueva/pendiente/aceptada/rechazada/activa/pausada/cerrada), `Panel` (details/acordeón), `CampoFormulario`, `GrupoOpciones`, `Carrusel`, `Prospecto`, `ModalConfirmacion`, `BarraAccion`.
-
-## Cambios justificados respecto a Figma
-- Botón principal coral con texto marino (blanco sobre coral da 2.5:1 y no cumple 4.5:1).
-- Nav inferior: Empleos, Solicitudes, Mi empresa, Ingresar (Guardados y Mi perfil aún no tienen página).
-- Login con correo/teléfono (RF-008) y sin la foto de Unsplash+ (licencia); agregar `img/` propia si se desea.
-- Teléfono de ayuda AMAC (RF-052) es un placeholder: 81 0000 0000. Enlace de donativos también.
-
-## Pendiente antes de entregar
-Validar en validator.w3.org, correr Lighthouse (≥ 90), tomar capturas de index.html (celular y escritorio) y desplegar en Vercel (Framework: Other).
+AMAC - Plataforma de empleo (Entrega 2)
+Integrantes y qué hizo cada uno
+Diego Núñez Guzmán: (escribir qué hizo)
+Ricardo Villarreal Villatoro: (escribir qué hizo)
+Emiliano Martinez Ramirez: (escribir qué hizo)
+Paleta de colores (variables CSS)
+--color-marino: 
+#202945 (header, botones secundarios y texto)
+--color-coral: 
+#ff7c5f (botón principal)
+--color-coral-texto: 
+#b3361b (enlaces y acentos en texto)
+--color-celeste: 
+#d5e9f2 (logos de empresa y carrusel)
+--color-banner: 
+#6953f3 (anillo de foco)
+Estatus: verde para aceptada, rojo para rechazada, naranja claro para pendiente
+Tipografías
+Atkinson Hyperlegible (Google Fonts), recomendada para baja visión
+Tamaño base: 1.125rem (18 px)
+Títulos: h1 2rem, h2 1.5rem, h3 1.25rem
+Componentes reutilizables identificados
+Encabezado y navegación principal
+Pie de página
+Botón (primario, secundario y contorno)
+Botón de ícono (guardar vacante)
+Tarjeta de vacante
+Tarjeta de solicitud
+Logo de empresa
+Etiqueta de estatus (nueva, pendiente, aceptada, rechazada, activa, pausada, cerrada)
+Panel desplegable (filtros, registro y vacantes de empresa)
+Campo de formulario
+Grupo de opciones (radio y checkbox)
+Carrusel de imágenes
+Prospecto (candidato en el panel de empresa)
+Ventana de confirmación
+Capturas de index.html
+Celular: (agregar captura)
+Escritorio: (agregar captura)
